@@ -5,7 +5,7 @@ file { '/usr/local/bin/run-puppet':
 }
 file { '/tmp/hello.txt':
   ensure  => 'file',
-  content => 'hello james',
+  content => 'hello james\n',
 }
 
 cron { 'run-puppet':
